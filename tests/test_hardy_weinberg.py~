@@ -1,0 +1,9 @@
+from evolutionary_genetics.hardy_weinberg import HardyWeinberg
+import pytest
+
+@pytest.fixture
+def hw():
+    return HardyWeinberg(0.3)
+
+
+def test_expected_genotype():
